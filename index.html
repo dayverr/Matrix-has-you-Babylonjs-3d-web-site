@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Room Explorer - Babylon.js</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <div id="info" class="hidden">🖱️ Scroll to explore • Click buttons to see image info</div>
+    <canvas id="renderCanvas"></canvas>
+    
+    <!-- Start screen overlay -->
+    <div id="start-screen">
+        <div class="start-content">
+            <h1 class="start-title">THE MATRIX</h1>
+            <p class="start-subtitle">Digital Art Gallery</p>
+            <button id="start-button">Enter the Matrix</button>
+        </div>
+    </div>
+    
+    <!-- Modal for image info -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 id="modal-title">Image Title</h2>
+            <p id="modal-description">Image description goes here.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
